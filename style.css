@@ -1,0 +1,127 @@
+/* transform */
+/* div{
+    width: 150px;
+    height: 80px;
+    background-color: red;
+}
+div.a{
+   
+    transform: rotate(20deg);
+}
+div.b{
+    transform: skew(20deg);
+}
+div.c{
+    transform: scaleX(2.5);  used for size 
+     
+} */
+
+/* transform origin */
+/* #div1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 100px;
+    border: 1px solid black;
+}
+#div2{
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: red;
+    transform: rotate(30deg); transform property will no work without transfrom rotate property
+    transform-origin: 80% 20%;
+} */
+
+/* transform style */
+/* #div1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 100px;
+    border: 1px solid black;
+}
+#div2{
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: red;
+    transform: rotateY(60deg);  
+    transform-style: preserve-3d;
+} 
+#div3{
+    padding: 40px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: rgb(185, 255, 22);
+    transform: rotateY(-60deg);  
+     
+}  */
+
+/* transition */
+/* div{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 2s;
+}
+div:hover{
+    width: 200px;
+} */
+
+/* shorthand */
+/* div{
+    width: 100px;
+    height: 100px;
+    transition: width 5s ease-in-out 2s;
+    background-color: black;
+}
+div:hover{
+    width: 200px;
+} */
+
+/* animations */
+div{
+    width: 100px;
+    height: 100px;
+     background-color: rgb(241, 10, 168);
+     animation: hello;
+     animation-duration: 2s;
+     animation-delay: 0s; 
+     animation-iteration-count: 5;
+     animation-direction:alternate-reverse;
+     position: relative;
+}
+
+@keyframes hello{
+   0%{
+        background-color:black;
+        top:0px;
+        left:0px;
+    }
+    25%{
+        background-color: red; 
+        top:0px;
+        left:200px;
+    }
+    50%{
+        background-color: rgb(13, 0, 255);
+         top:200px;
+        left:200px;
+    }
+    75%{
+        background-color: green;
+         top:200px;
+        left:0px;
+    }
+    100%{
+        background-color:red;
+         top:0px;
+        left:0px;
+    }
+}
